@@ -1,0 +1,15 @@
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(31,31,34,0.6502976190476191) 39%, rgba(1,2,3,0.6502976190476191) 50%, rgba(50,60,62,1) 100%);}
+h1{padding: 3%;
+   
+    color: aliceblue;
+    margin: 0;
+}
+.table{
+    margin-bottom: 0;
+}
+th{
+    background-color: #1b1b1b;
+}

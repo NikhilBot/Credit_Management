@@ -1,0 +1,45 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  body{
+    height: 100vh;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(31,31,34,0.6502976190476191) 39%, rgba(1,2,3,0.6502976190476191) 50%, rgba(50,60,62,1) 100%);
+  }
+
+  .container {
+    max-width: 660px;
+
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    margin-top: 10%;
+    min-width: 220px;
+  }
+
+  .btn{
+    margin-top: 0px;
+    margin-bottom: 5px;;
+  }
+  .card-body{
+    background-color: rgba(27, 24, 24, 0.753);
+    color: beige;
+  }
+  .card-header,.card-footer{
+    background-color: rgba(78, 76, 76, 0.753);
+    color: beige;
+  }
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }

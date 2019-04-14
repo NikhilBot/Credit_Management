@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="users.css">
+</head>
+
+<body>
+
+
+    <h1 class="text-center">Users</h1>
+   
+
+
+    <table class="table text-center table-sm table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Credits</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <% let a=1; users.forEach(function(user){ %>
+            <form class="" action="/user/<%= user._id%>" method="POST">
+        
+        <tbody>
+            <tr>
+                <th scope="row"><%=a++%></th>
+                <td><%=user.name%></td>
+                <td><%=user.email%> </td>
+                <td> <%=user.credit%></td>
+                <td><button class="btn btn-sm btn-secondary" type="submit">View</button></td>
+            </tr>
+          
+        </tbody>
+        </form>
+        <% }); %>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
